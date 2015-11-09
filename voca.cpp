@@ -11,7 +11,9 @@ using namespace std;
 
 char* Voca_Mean(void)
 {
+	cout << "HEO" <<endl;
 	static char resultProtocol[1000];
+	memset(resultProtocol,0x00,sizeof(resultProtocol));
 	//char *resultProtocol = (char *)malloc(100);	
 	setlocale(LC_ALL, "korean");
 	FILE *ppfile = NULL;

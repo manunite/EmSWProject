@@ -12,6 +12,7 @@ using namespace std;
 char* Voca_Mean(void)
 {
 	static char resultProtocol[1000];
+	memset(resultProtocol,0x00,sizeof(resultProtocol));
 	//char *resultProtocol = (char *)malloc(100);	
 	setlocale(LC_ALL, "korean");
 	FILE *ppfile = NULL;
@@ -27,7 +28,7 @@ char* Voca_Mean(void)
 
 	ppfile = fopen("eng.txt","r");
 	
-	fseek(ppfile,rand()%20000+1,SEEK_SET);
+	fseek(ppfile,rand()%25000+1,SEEK_SET);
 	while(1)
 	{
 		if(fgetc(ppfile)=='\n')
