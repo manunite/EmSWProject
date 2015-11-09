@@ -193,9 +193,9 @@ int main (int argc, char *argv[])
   Title = gtk_label_new("문제풀이");
   result = gtk_label_new("결과가 떠야함");
 
-  button_1 = gtk_button_new_with_label ("1번");
-  button_2 = gtk_button_new_with_label ("2번");
-  button_3 = gtk_button_new_with_label ("3번");
+  button_1 = gtk_button_new_with_label (W_mean1);
+  button_2 = gtk_button_new_with_label (W_mean2);
+  button_3 = gtk_button_new_with_label (W_mean3);
   button_4 = gtk_button_new_with_label (R_mean);
 
   gtk_widget_set_size_request(label_Name,200,60);
