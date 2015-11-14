@@ -64,17 +64,17 @@ char* Voca_Mean(void)
 		mean[idx++] = a;
 	}
 
-	cout << "추출된 영단어는 " << voca << endl;
+	/*cout << "추출된 영단어는 " << voca << endl;
 	cout << "뜻은 " << mean << endl;
-	cout << "HEO"<< endl;
+	cout << "HEO"<< endl;*/
 	strcat(resultProtocol,voca);
-	cout << "KYU"<< endl;
+	//cout << "KYU"<< endl;
 	//strcat(resultProtocol,"%");
-	cout << "JIN"<< endl;
+	//cout << "JIN"<< endl;
 	strcat(resultProtocol,mean);
-	cout << "최종 " << "(" << "KAKAKAKA" << ")" << endl;
+	/*cout << "최종 " << "(" << "KAKAKAKA" << ")" << endl;
 	cout << "최종 " << "(" << resultProtocol << ")" << endl;
-	cout << "----------------------------"<< endl;
+	cout << "----------------------------"<< endl;*/
 
 	return resultProtocol;	
 	//return 100;

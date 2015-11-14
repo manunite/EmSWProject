@@ -37,17 +37,98 @@ char receive_Arr2[300];
 char result_Arr3[300];
 char receive_Arr3[300];
 int i;
+int CorrectNum;
+int WrongNum;
+int k;
+int AnswerIdx;
+
+
+int main (int argc, char *argv[]);
+int euckr2utf8(char *source, char *dest, int dest_size) ;
+char* Voca_Mean(void);
+void tokenizer2(char *receive1,char *str);
+void tokenizer(char *receive1,char *receive2,char *str);
+void noncorrect (GtkWidget *widget);
+void correct (GtkWidget *widget);
+
+void reset()
+{
+	////////답 추출///////////
+  char *R_Protocol = Voca_Mean(); usleep(100*10);//1000*1000-100000
+  strncpy(receive_Arr,R_Protocol,strlen(R_Protocol));
+
+  char *Wrong_Answer1 = Voca_Mean(); usleep(100*10);
+  strncpy(receive_Arr1,Wrong_Answer1,strlen(Wrong_Answer1));
+
+  char *Wrong_Answer2 = Voca_Mean(); usleep(100*10);
+  strncpy(receive_Arr2,Wrong_Answer2,strlen(Wrong_Answer2));
+
+  char *Wrong_Answer3 = Voca_Mean(); usleep(100*10);
+  strncpy(receive_Arr3,Wrong_Answer3,strlen(Wrong_Answer3));
+  //////////////////////////
+
+
+  //b = iconv("EUC-KR","UTF-8",*R_Protocol);
+  //cout << "--->" << R_Protocol << endl;
+  int euclen5 = euckr2utf8(receive_Arr, receive_Arr, sizeof(receive_Arr));
+  //euclen1 = euckr2utf8(R_Protocol, R_Protocol, sizeof(R_Protocol));
+  int euclen2 = euckr2utf8(receive_Arr1, receive_Arr1, sizeof(receive_Arr1));
+  int euclen3 = euckr2utf8(receive_Arr2, receive_Arr2, sizeof(receive_Arr2));
+  int euclen4 = euckr2utf8(receive_Arr3, receive_Arr3, sizeof(receive_Arr3));
+  
+  memset(R_voca,0x00,sizeof(R_voca));
+  memset(R_mean,0x00,sizeof(R_mean));
+  memset(W_mean1,0x00,sizeof(W_mean1));
+  memset(W_mean2,0x00,sizeof(W_mean2));
+  memset(W_mean3,0x00,sizeof(W_mean3));
+
+  tokenizer(R_voca,R_mean,receive_Arr);
+  tokenizer2(W_mean1,receive_Arr1);
+  tokenizer2(W_mean2,receive_Arr2);
+  tokenizer2(W_mean3,receive_Arr3);
+  
+  k = rand()%4 + 1;
+  g_print("%d\n",k);
+  
+  gtk_label_set_text(GTK_LABEL(Quiz),R_voca);
+  gtk_button_set_label(GTK_BUTTON(button[(k++)%4 + 1]),W_mean1);
+  gtk_button_set_label(GTK_BUTTON(button[(k++)%4 + 1]),W_mean2);
+  gtk_button_set_label(GTK_BUTTON(button[(k++)%4 + 1]),W_mean3);
+  gtk_button_set_label(GTK_BUTTON(button[(k++)%4 + 1]),R_mean);
+  
+  AnswerIdx = ((k-1)%4)+1;
+  g_print("%d",AnswerIdx);
+  
+  gtk_signal_disconnect_by_data(GTK_OBJECT(button[1]),(gpointer)(NULL));
+  gtk_signal_disconnect_by_data(GTK_OBJECT(button[2]),(gpointer)(NULL));
+  gtk_signal_disconnect_by_data(GTK_OBJECT(button[3]),(gpointer)(NULL));
+  gtk_signal_disconnect_by_data(GTK_OBJECT(button[4]),(gpointer)(NULL));
+  
+  
+  for(i=1;i<=4;i++)
+  {
+	  if(i==AnswerIdx)
+		gtk_signal_connect (GTK_OBJECT (button[AnswerIdx]), "clicked", G_CALLBACK (correct), NULL);
+	  else
+		gtk_signal_connect (GTK_OBJECT (button[i]), "clicked", G_CALLBACK (noncorrect), NULL);
+  }
+  return;
+}
 
 void correct (GtkWidget *widget)
 {
   g_print ("correct\n");
   gtk_label_set_text(GTK_LABEL(result),"Correct!");
+  CorrectNum++;
+  reset();
 }
 
 void noncorrect (GtkWidget *widget)
 {
   g_print ("Wrong\n");
   gtk_label_set_text(GTK_LABEL(result),"Wrong Answer!");
+  WrongNum++;
+  reset();
 }
 
 void destroy (void)
@@ -120,7 +201,6 @@ void tokenizer2(char *receive1,char *str)
   }
 }
 
-char* Voca_Mean(void);
 
 
 int main (int argc, char *argv[])
@@ -137,16 +217,16 @@ int main (int argc, char *argv[])
   //setlocale(LC_ALL, "korean");
 
   ////////답 추출///////////
-  char *R_Protocol = Voca_Mean();usleep(100*10);//1000*1000-100000
+  char *R_Protocol = Voca_Mean(); usleep(100*10);//1000*1000-100000
   strncpy(receive_Arr,R_Protocol,strlen(R_Protocol));
 
-  char *Wrong_Answer1 = Voca_Mean();usleep(100*10);
+  char *Wrong_Answer1 = Voca_Mean(); usleep(100*10);
   strncpy(receive_Arr1,Wrong_Answer1,strlen(Wrong_Answer1));
 
-  char *Wrong_Answer2 = Voca_Mean();usleep(100*10);
+  char *Wrong_Answer2 = Voca_Mean(); usleep(100*10);
   strncpy(receive_Arr2,Wrong_Answer2,strlen(Wrong_Answer2));
 
-  char *Wrong_Answer3 = Voca_Mean();usleep(100*10);
+  char *Wrong_Answer3 = Voca_Mean(); usleep(100*10);
   strncpy(receive_Arr3,Wrong_Answer3,strlen(Wrong_Answer3));
   //////////////////////////
 
@@ -207,15 +287,15 @@ int main (int argc, char *argv[])
   Title = gtk_label_new("문제풀이");
   result = gtk_label_new("결과가 떠야함");
 
-////////////////////문제 배치////////////////////////////
+  ////////////////////문제 배치////////////////////////////
   srand((unsigned)time(NULL) + (unsigned)getpid());
-  int k = rand()%4 + 1;
+  k = rand()%4 + 1;
   g_print("%d\n",k);
   button[(k++)%4 + 1] = gtk_button_new_with_label (W_mean1);
   button[(k++)%4 + 1] = gtk_button_new_with_label (W_mean2);
   button[(k++)%4 + 1] = gtk_button_new_with_label (W_mean3);
   button[(k++)%4 + 1] = gtk_button_new_with_label (R_mean);
-  int AnswerIdx = ((k-1)%4)+1;
+  AnswerIdx = ((k-1)%4)+1;
   g_print("%d",AnswerIdx);
   //////////////////////////////////////////////////////
 
@@ -249,6 +329,7 @@ int main (int argc, char *argv[])
 
   for(i=1;i<=4;i++)
   {
+	  g_print("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ\n");
 	  if(i==AnswerIdx)
 		gtk_signal_connect (GTK_OBJECT (button[AnswerIdx]), "clicked", G_CALLBACK (correct), NULL);
 	  else
