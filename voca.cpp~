@@ -5,19 +5,24 @@
 #include <time.h>
 #include <math.h>
 #include <unistd.h>
+#include <sys/time.h>
 
 using namespace std;
 
 
 char* Voca_Mean(void)
 {
+	struct timeval t;
+	gettimeofday(&t,NULL);
+	cout << "HEO" <<endl;
 	static char resultProtocol[1000];
 	memset(resultProtocol,0x00,sizeof(resultProtocol));
 	//char *resultProtocol = (char *)malloc(100);	
 	setlocale(LC_ALL, "korean");
 	FILE *ppfile = NULL;
-	srand(time(NULL) + (unsigned)getpid());
-	
+	//srand((unsigned)time(NULL) + (unsigned)getpid());
+	srand(t.tv_usec);
+	//srand(GetTickCount());	
 	char voca[100];
 	char mean[100];
 	char bound[3];
