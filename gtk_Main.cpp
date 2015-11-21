@@ -133,6 +133,7 @@ void correct (GtkWidget *widget)
   g_print ("correct\n");
   gtk_label_set_text(GTK_LABEL(result),"Correct!");
   CorrectNum++;
+  //sleep(1);
   reset();
 }
 
@@ -141,6 +142,7 @@ void noncorrect (GtkWidget *widget)
   g_print ("Wrong\n");
   gtk_label_set_text(GTK_LABEL(result),"Wrong Answer!");
   WrongNum++;
+  //sleep(1);
   reset();
 }
 
@@ -339,7 +341,7 @@ int main (int argc, char *argv[])
   gtk_container_add(GTK_CONTAINER(hbox_2),button[3]);
   gtk_container_add(GTK_CONTAINER(hbox_2),button[4]);
 
-
+  
   for(i=1;i<=4;i++)
   {
 	  if(i==AnswerIdx)
@@ -347,11 +349,6 @@ int main (int argc, char *argv[])
 	  else
 		gtk_signal_connect (GTK_OBJECT (button[i]), "clicked", G_CALLBACK (noncorrect), NULL);
   }
-  //gtk_signal_connect (GTK_OBJECT (button_4), "clicked", GTK_SIGNAL_FUNC (correct), NULL);
-  //gtk_signal_connect (GTK_OBJECT (button[AnswerIdx]), "clicked", G_CALLBACK (correct), NULL);
-  //gtk_signal_connect (GTK_OBJECT (button[AnswerIdx]), "clicked", G_CALLBACK (correct), NULL);
-  //gtk_signal_connect_object (GTK_OBJECT (button_4), "clicked", GTK_SIGNAL_FUNC (gtk_widget_destroy), GTK_OBJECT (window));
-  //gtk_container_add (GTK_CONTAINER (window), button);
 
   gtk_container_add (GTK_CONTAINER (hbox_1), vbox_1);
   gtk_container_add (GTK_CONTAINER (hbox_1), vbox_2);
