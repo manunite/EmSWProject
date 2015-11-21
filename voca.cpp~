@@ -14,7 +14,7 @@ char* Voca_Mean(void)
 {
 	struct timeval t;
 	gettimeofday(&t,NULL);
-	cout << "HEO" <<endl;
+	//cout << "HEO" <<endl;
 	static char resultProtocol[1000];
 	memset(resultProtocol,0x00,sizeof(resultProtocol));
 	//char *resultProtocol = (char *)malloc(100);	
@@ -30,6 +30,7 @@ char* Voca_Mean(void)
 	memset(resultProtocol,0x00,sizeof(resultProtocol));
 	memset(voca,0x00,sizeof(voca));
 	memset(mean,0x00,sizeof(mean));
+	memset(bound,0x00,sizeof(bound));
 
 	ppfile = fopen("eng.txt","r");
 	
@@ -64,18 +65,18 @@ char* Voca_Mean(void)
 		mean[idx++] = a;
 	}
 
-	cout << "추출된 영단어는 " << voca << endl;
+	/*cout << "추출된 영단어는 " << voca << endl;
 	cout << "뜻은 " << mean << endl;
-	cout << "HEO"<< endl;
+	cout << "HEO"<< endl;*/
 	strcat(resultProtocol,voca);
-	cout << "KYU"<< endl;
+	//cout << "KYU"<< endl;
 	//strcat(resultProtocol,"%");
-	cout << "JIN"<< endl;
+	//cout << "JIN"<< endl;
 	strcat(resultProtocol,mean);
-	cout << "최종 " << "(" << "KAKAKAKA" << ")" << endl;
+	/*cout << "최종 " << "(" << "KAKAKAKA" << ")" << endl;
 	cout << "최종 " << "(" << resultProtocol << ")" << endl;
-	cout << "----------------------------"<< endl;
-
+	cout << "----------------------------"<< endl;*/
+	fclose(ppfile);
 	return resultProtocol;	
 	//return 100;
 }

@@ -20,7 +20,7 @@ GtkWidget *window;
   GtkWidget *QuizIntro, *Quiz;
   GtkWidget *result;
   GtkWidget *Title;
-////////////////////////////////////////
+///////////////////////////// ///////////
 char R_voca[200];
 char R_mean[200];
 char W_mean1[200];
@@ -54,22 +54,30 @@ void correct (GtkWidget *widget);
 void reset()
 {
 	////////답 추출///////////
-  char *R_Protocol = Voca_Mean(); usleep(100*10);//1000*1000-100000
+	cout << "Correct : " << CorrectNum << " ---- " << "Wrong : " << WrongNum << endl;
+  memset(result_Arr,0x00,sizeof(result_Arr));
+  memset(receive_Arr,0x00,sizeof(receive_Arr));
+  memset(result_Arr1,0x00,sizeof(result_Arr1));
+  memset(receive_Arr1,0x00,sizeof(receive_Arr1));
+  memset(result_Arr2,0x00,sizeof(result_Arr2));
+  memset(receive_Arr2,0x00,sizeof(receive_Arr2));
+  memset(result_Arr3,0x00,sizeof(result_Arr3));
+  memset(receive_Arr3,0x00,sizeof(receive_Arr3));
+  
+  char *R_Protocol = Voca_Mean(); usleep(100*100);//1000*1000-100000
   strncpy(receive_Arr,R_Protocol,strlen(R_Protocol));
 
-  char *Wrong_Answer1 = Voca_Mean(); usleep(100*10);
+  char *Wrong_Answer1 = Voca_Mean(); usleep(100*100);
   strncpy(receive_Arr1,Wrong_Answer1,strlen(Wrong_Answer1));
 
-  char *Wrong_Answer2 = Voca_Mean(); usleep(100*10);
+  char *Wrong_Answer2 = Voca_Mean(); usleep(100*100);
   strncpy(receive_Arr2,Wrong_Answer2,strlen(Wrong_Answer2));
 
-  char *Wrong_Answer3 = Voca_Mean(); usleep(100*10);
+  char *Wrong_Answer3 = Voca_Mean(); usleep(100*100);
   strncpy(receive_Arr3,Wrong_Answer3,strlen(Wrong_Answer3));
   //////////////////////////
 
 
-  //b = iconv("EUC-KR","UTF-8",*R_Protocol);
-  //cout << "--->" << R_Protocol << endl;
   int euclen5 = euckr2utf8(receive_Arr, receive_Arr, sizeof(receive_Arr));
   //euclen1 = euckr2utf8(R_Protocol, R_Protocol, sizeof(R_Protocol));
   int euclen2 = euckr2utf8(receive_Arr1, receive_Arr1, sizeof(receive_Arr1));
@@ -87,6 +95,11 @@ void reset()
   tokenizer2(W_mean2,receive_Arr2);
   tokenizer2(W_mean3,receive_Arr3);
   
+  cout << R_voca << "- " << R_mean << endl;
+  cout << W_mean1 << endl;
+  cout << W_mean2 << endl;
+  cout << W_mean3 << endl;
+  
   k = rand()%4 + 1;
   g_print("%d\n",k);
   
@@ -97,7 +110,7 @@ void reset()
   gtk_button_set_label(GTK_BUTTON(button[(k++)%4 + 1]),R_mean);
   
   AnswerIdx = ((k-1)%4)+1;
-  g_print("%d",AnswerIdx);
+  g_print("%d\n",AnswerIdx);
   
   gtk_signal_disconnect_by_data(GTK_OBJECT(button[1]),(gpointer)(NULL));
   gtk_signal_disconnect_by_data(GTK_OBJECT(button[2]),(gpointer)(NULL));
@@ -296,7 +309,7 @@ int main (int argc, char *argv[])
   button[(k++)%4 + 1] = gtk_button_new_with_label (W_mean3);
   button[(k++)%4 + 1] = gtk_button_new_with_label (R_mean);
   AnswerIdx = ((k-1)%4)+1;
-  g_print("%d",AnswerIdx);
+  g_print("%d\n",AnswerIdx);
   //////////////////////////////////////////////////////
 
   gtk_widget_set_size_request(label_Name,200,60);
@@ -329,7 +342,6 @@ int main (int argc, char *argv[])
 
   for(i=1;i<=4;i++)
   {
-	  g_print("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ\n");
 	  if(i==AnswerIdx)
 		gtk_signal_connect (GTK_OBJECT (button[AnswerIdx]), "clicked", G_CALLBACK (correct), NULL);
 	  else

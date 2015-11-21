@@ -5,7 +5,7 @@ acceptable - 받아들일수있는
 accidentally - 우연히
 accomplish - 수행하다,완성하다
 according to - ~에따라,따르면
-acknowledge - 인정하다
+acknowledge - ~을받았음을알리다,인정하다
 at all times - 언제나,내내
 a variety of - 다양한(various)
 avestedinterest - 기득권
@@ -48,10 +48,10 @@ idea - 개념,의견
 ideal - 이상적인
 idealistically - 이상적으로
 idealize - 이상화하다
-ideally - 완벽하게
+ideally - 더할나위없이,완벽하게
 international - 국제적인
 internationally - 국제적으로
-lasting - 지속적인
+lasting - 지속적인,오래지속되는
 latch - 걸쇠,빗장
 magnification - 확대,과장
 maintain - 유지하다,주장하다
@@ -62,21 +62,21 @@ paint - 페인트칠하다,그리다
 paper - 서류,신문,평론
 per - ~마다
 rainfall - 강우,강수량
-raise - 올리다,모금하다
+raise - 올리다,문제를제기하다,모금하다
 safekeeping - 보관,보호
-season - 계절,시기
+season - 계절,시기,양념을치다
 seasonal - 계절적인,주기적인
 seasoning - 조미료
 suitable - 적당한,알맞은
 suitably - 적절히,알맞게
 tactics - 전술,전략
-talk - 담화,토론
+talk - 이야기하다,담화,토론
 wage - 임금
 wrongly - 부당하게,잘못하여
-abate - 완화시키다,감소하다
-abduct - 유괴하다,납치하다
+abate - 완화시키다,감소하다,
+abduct - 유괴하다,납치하다,
 accelerate - 가속화하다
-access - 접근,출입,권한
+access - 접근출입권한
 accessible - 접근하기쉬운
 accessory - 장신구액세서리
 accordingly - 따라서,그러므로
@@ -107,7 +107,7 @@ inatimelymanner - 적시에
 intricate - 복잡한
 irregularly - 불규칙적으로
 just enough to - 딱 ~할만큼 충분한
-lagbehind - 뒤쳐지다
+lagbehind - 뒤쳐지다,
 lease - 임대하다,임대차(계약)
 lecture - 강의,강연
 mail - 우편,우편에붙이다
@@ -118,7 +118,7 @@ object - 반대하다
 objection - 반대
 objective - 목적,객관적인
 objectively - 객관적으로
-oblivious - 알지못하는
+oblivious - 깨닫지못하는,알지못하는
 parallel - 평행의
 qualified - 자격있는,적격의
 quality - 품질,자질
@@ -130,14 +130,14 @@ rate - 요금,속도,비율
 rating - 평가,견적액,신용도
 sale - 판매 - 판매의
 spontaneously - 자발적으로
-superior - 우수한,뛰어난
+superior - 우수한뛰어난
 talented - 재능이있는,유능한
 tariff - 관세
-trouble - 괴롭히다,걱정
+trouble - 괴롭히다,걱정시키다,걱정
 ultimate - 최후의궁극적인
 understand - 이해하다,알다
 understandable - 이해할만한
-understanding - 이해,협정
+understanding - 이해,협정,이해심많은
 uniform - 유니폼
 vacancy - 공석,결원
 vacant - 공석의,비어있는
@@ -149,7 +149,7 @@ whole - 전체의
 accomplice - 공범자
 accord - 일치,조화,합의
 account - 설명,계좌
-accountable - 책임이있는
+accountable - 설명할수있는,책임이있는
 accountably - 설명할수 있도록
 acquaint - 알리다,숙지시키다
 beneficial - 유익한,이로운
@@ -167,7 +167,7 @@ commonly - 일반적으로
 decrease - 줄이다,감소하다
 delegate - 위임하다,대표
 delegation - 대표단
-early - 이른,일찍
+early - 이른 - 일찍
 faction - 당파,파벌
 famished - 굶주린
 finished product - 완제품
@@ -179,6 +179,7 @@ gracefully - 우아하게,품위있게
 handcrafted - 손으로만든
 highersalary - 더 높은 월급
 identical - 동일한
+identifiable - 신원을확인할수있는
 identification - 신분증명(서)
 identify - 확인하다,동일시하다
 identity - 신원
@@ -190,23 +191,23 @@ late - 늦은,늦게
 lately - 최근에
 lateness - 늦음,지연
 latest - 최근의
-lessen - 약화시키다
+lessen - 감소시키다,약화시키다
 maneuver - 유도하다
 negotiation - 협상,교섭
-obligate - 강요하다
-reach - 도착하다,연락을하다
+obligate - 의무를지우다,강요하다
+reach - 도착하다,연락을취하다
 reaction - 반응,태도
 satisfaction - 만족
 satisfactorily - 만족스럽게,충분히
-satisfactory - 충족시키는
+satisfactory - (요구,목적을)충족시키는
 satisfied - 만족한
 satisfy - 만족시키다
-satisfying - 만족을주는
+satisfying - (성취감으로)만족을주는
 scrutinize - 면밀히 조사하다
-send A to B - A를 B에게보내다
+send A to B - A를B에게보내다
 sure - 확신하는
 takecareof - 돌보다,책임지다
-tend - ~하는 경향이있다
+tend - ~하는경향이있다
 underconstruction - 공사중인
 union - 조직,단체
 update - 새롭게하다,갱신하다
@@ -226,13 +227,13 @@ dedication - 헌신
 deem - 생각하다,간주하다
 degree - 정도,등급
 elect - 선출하다
-election - 선거,선출
+election - 선거선출
 eliminate - 제거하다
 fare - 교통요금,운임
 fill - 채우다,메우다
 find out - ~을발견하다
 grant - 수여하다,허가하다
-honor - 영광,존경하다
+honor - 영광,존경하다(=respect)
 impair - 악화하다,손상시키다
 improvementin - ~에 있어서의 발전
 lend - 빌려주다
@@ -245,7 +246,7 @@ needlessly - 불필요하게
 needy - 매우 가난한
 neuter - 중성,중립의
 neutral - 중립적인
-neutrality - 중립,중립정책
+neutrality - 중립(상태),중립정책
 neutralize - 중립화하다
 neutrally - 중립적으로
 neutron - 중성자
@@ -259,12 +260,12 @@ quick - 빠른
 quicken - 빠르게하다
 quickly - 빠르게
 quickness - 민첩,기민
-rare - 드문,희귀한
+rare - 드문희귀한
 salvage - (해난,재산)구조
 scent - 향기냄새
 search - 찾다,탐색하다
 still - 아직도,여전히
-technical - 전문적인,기술적인
+technical - 전문적인기술적인
 technicality - 전문적사항,전문어
 technically - 전문적으로
 technician - 기술자,전문가
@@ -292,7 +293,7 @@ claim - 요구하다,요구
 concisely - 간결하게
 defend - 방어하다,지키다
 economic - 경제학의,경제상의
-economical - 경제적인
+economical - 경제적인,절약이되는
 economically - 경제적으로
 ecomomics - 경제학
 economist - 경제학자
@@ -308,7 +309,7 @@ leverage - 지레장치,영향력
 license - 면허,허가
 lift - 들어올리다
 manners - 예절,풍습
-marginal - 적은,별로
+marginal - 적은,별로,중요하지않는
 marginally - 약간
 neglect - 무시하다,소홀히하다
 obstruct - 방해하다,막다
@@ -328,14 +329,14 @@ resign - 사임하다
 resignation - 사직,사임
 resigned - 사직한
 resignedly - 체념한듯이
-seem - ~인것같다
+seem - ~처럼보이다,~인것같다
 select - 선택하다
 selection - 선택,선집
 specific - 구체적인
 specifically - 구체적으로
 specification - 설명서
 specify - 명시하다
-specification of - ~에 대한 세부내역
+specification of - ~에대한 세부내역
 straightly - 곧바로
 surface - 표면
 sustained - 지속된,한결같은
@@ -352,13 +353,14 @@ beaimedat - ~을겨냥하다
 block - 방해하다,장애,두절
 build - 세우다
 builder - 건설자,건축업자
+built - in - 붙박이의,장착된
 bulk - 용적,부피
 cause - 원인이되다,야기하다
 certifiable - 보증할수있는
 certification - 증명(서)
 certified - 공인의,증명된
 certify - 보증하다,증명하다
-checkin - 수속하다
+checkin - (호텔,공항에서)수속하다
 collaborate - 합작하다
 command - 명령하다
 construe - 해석하다
@@ -399,7 +401,7 @@ possibility - 가능성
 probable - 있음직한,가능성있는
 probably - 아마도
 reason - 이유,이성
-reasonable - 적당한,논리적인
+reasonable - (값이)과하지않은,적당한,논리적인
 remark - 주목하다,말하다
 remarkably - 두드러지게,현저하게
 represent - 나타내다
@@ -408,8 +410,8 @@ seat - 착석시키다,수용하다
 sect - 분파,당파
 sentence - 형을선고하다
 take A into account - A를 고려하다
-unused - 사용치않은
-utility - 공공시설
+unused - 쓰지않은,사용치않은
+utility - (전기·가스등의)공공시설
 utilization - 이용
 utilize - 이용하다
 utilizer - 이용자
@@ -419,7 +421,7 @@ caution - 조심,주의
 cautious - 조심성있는,신중한
 cautiously - 조심스럽게
 chance - 가능성,기회
-charge - 부과하다
+charge - 부과하다,(금액을)청구하다
 commute - 통근하다
 defy - 도전하다,반항하다
 demand - 요구하다(=request)
@@ -430,9 +432,9 @@ desirable - 바람직한
 efficiency - 능률
 efficient - 능률적인,유능한
 efficiently - 능률적으로
-encase - 쌓다,넣다
+encase - (상자등에)쌓다,넣다
 enormously - 엄청나게
-fast - 빠른,신속한
+fast - 빠른신속한,빨리
 fee - 수수료,요금
 finish - 끝내다,마치다
 finished - 끝마친,완성된
@@ -445,9 +447,9 @@ hardness - 단단함,견고
 immune - 면역성의
 impartial - 공평한
 impartiality - 공명정대
-impartially - 공정하게
+impartially - 치우치치않게,공정하게
 imply - 암시하다,내포하다
-impose - 부과하다
+impose - (의무,세금등을)지우다,부과하다
 in addition - 게다가,더욱이
 in addition to - ~에덧붙여
 incidence - 발생(률)
@@ -464,13 +466,13 @@ norminal - 아주적은,보잘것없는
 norminally - 표면상,명목상
 notice - 공고,주목
 noticeable - 현저한,두드러진
-occur - 일어나다,생기다
+occur - 일어나다생기다(=happen)
 odor - 냄새
 payincrease - 임금인상
 perform - 수행하다
 performance - 성과,상연
 perishable - 썩기쉬운,개지기쉬운
-perish - 죽다,소멸하다
+perish - 죽다,썩어없어지다,소멸하다
 raise questioins - 질문하다,의문시하다
 receptacle - 용기,두는곳
 reception - 환영회,접수처
@@ -489,7 +491,7 @@ track - 자취,철로
 tradition - 전통
 transcribe - 베끼다번역하다
 unwavering - 동요하지않은,확고한
-acquire - 얻다,획득하다
+acquire - 얻다획득하다,
 addition - 첨가,부가
 additional - 부가적인,추가의
 additionally - 덧붙여,게다가
@@ -528,13 +530,13 @@ offer - 제공하다,제안하다
 office - 사무소,영업소
 omission - 생략,누락
 on one's own - 스스로,단독으로
-permission - 허가,허용
+permission - 허가허용
 permissive - 허용하는
 permit - 허락하다
 quiet - 조용한
 quietly - 조용하게
 quietness - 고요
-real - 진짜의,진정한
+real - 진짜의진정한
 realism - 사실주의
 realist - 현실주의자
 realistic - 현시주의의사실주의의
@@ -566,7 +568,7 @@ advance - 진보,승진
 advantage - 이점,강점
 adversely - 반대로
 be applied to - ~에적용되다
-check - 수표,조사하다
+check - 수표,조사하다,점검하다
 choice - 선택한것,선택
 close - 닫다,가까운
 closed - 닫힌
@@ -575,10 +577,10 @@ closely - 가까이,면밀하게
 closeness - 밀폐,친밀
 comply - 응하다,따르다
 consequently - 따라서
-develop into - ~로 발전하다
+develop into - ~로 발전하다,전개하다
 encourage - 격려하다,촉진하다
 encouragement - 격려,장려
-encouraging - 장려하는
+encouraging - 힘을북돋아주는,장려하는
 except - ~을제외하고
 excepting - ~를빼고,~를제외하면
 exception - 예외,제외
@@ -613,7 +615,7 @@ security - 보안
 sensation - 감각,반향
 sense - 감각,느낌
 shock - 놀라게하다
-shop - 물건을사다
+shop - (가게에서)물건을사다
 strongly - 세게,단호히
 thorough - 철저한,완전한
 thoroughly - 철저하게,완전하게
@@ -624,7 +626,7 @@ transference - 이동
 unbiased - 공평한,선입견이없는
 uncertain - 불확실한,미정의
 unlimited miles - 무제한 주행거리
-upgrade - 개량하다
+upgrade - 품질을 향상시키다,개량하다
 widely admired - 널리 칭송받는
 worth - 가치가 있는
 worth while - 애쓸 가치가있는
@@ -656,7 +658,7 @@ deliver - 운반하다,배송하다
 deliverable - 배달가능한
 deliverance - 공표,해방
 delivery - 배송,배달
-dramatic - 희곡의,극적인
+dramatic - 희곡의극적인
 dramatically - 극적으로
 electric - 전기의전자의
 electricity - 전력,전기
@@ -666,7 +668,7 @@ flow - 흐르다, - 흐름
 happily - 행복하게,기꺼이
 imperative - 강제적인,필수적인
 inconvenience - 불편
-increase - 증가하다,늘어나다
+increase - 증가하다,늘어나다,
 increasing - 늘어나는,증가하는
 increasingly - 점점더
 incur - 손실을입다,초래하다
@@ -678,7 +680,7 @@ medical - 의학의
 medically - 의학적으로
 medicate - 투약하다
 medicinal - 약의,의약의
-meet - 부응하다,만나다
+meet - 만족시키다,부응하다,만나다
 moreover - 게다가,더욱이
 opponent - 적수,반대자
 opportunity - 기회
@@ -720,7 +722,7 @@ busy - 바쁜,통화중인
 clarification - 설명,명확화
 clarify - 명확히하다
 clarity - 명백,명료
-clear - 제거하다,처리하다
+clear - 명백한,제거하다,처리하다
 clearance - 정리,재고정리
 clearly - 뚜렷하게,명료하게
 clearness - 명확함
@@ -772,17 +774,18 @@ solicit - 간청하다
 transmit - 보내다,전하다,
 visit - 방문하다
 adopt - 채택하다
-agree with - ~에동의하다
-aim - 목적,의도
+agree with - ~에동의하다,일치하다
+aim - 목적,의도,목표로삼다
 alike - 마찬가지로,똑같이
 alliance - 동맹,연합
+becognizant of - ~을인식하고있다
 barrow - 빌리다
 combination - 결합,조합
 combined - 결합된
 compensate - 보상하다
 compete - 경쟁하다
 competition - 시합,경쟁
-competitive - 경쟁적인
+competitive - 경쟁적인,가격이알맞은
 competitor - 경쟁자
 deprive - 빼앗다,박탈하다
 deride - 비웃다,조롱하다
@@ -818,7 +821,7 @@ normally - 보통
 option - 선택권,선택
 perfect - 완벽한
 perfection - 완전,완성
-perfectly - 완전하게
+perfectly - 완전하게,더할나위없이
 pioneer - 개척자
 plan - 계획,계획하다,
 plate - 접시,간판
@@ -840,7 +843,7 @@ sophisticate - 세련되게하다
 sophisticated - 세련된,정교한
 sophistication - 세련미,정교함
 tight - 단단한
-tightly - 단단히,꽉
+tightly - 단단히,팽팽하게,꽉
 tightness - 견고,단단함
 transpire - 일어나다,발산하다
 unclaimed - 소유불명의
@@ -861,25 +864,25 @@ complie - 편찬하다,편집하다
 complain - 불평하다
 complaint - 불평,불만
 describe - 묘사하다,설명하다
-description - 설명서,해설
+description - (제품등의)설명서,해설
 entitle - 자격을주다
 equip - 갖추다
-equipment - 장비,설비
+equipment - 장비,설비(=apparatus)
 follow - 따르다,이해하다
 for free - 무료로
 form - 형식,양식
 formal - 형식적인,정식의
-formality - 의례적행위
+formality - 의례적행위,(복수형)정규절차
 formalize - 형식(공식)화하다
 formally - 정식으로,공식으로
 formalness - 형식적인것
 formation - 구조,형태
 herein - 이러한이유로
 infusion - 주입,고취
-ingredient - 성분,재료
+ingredient - (혼합물의)성분,재료
 jeopardize - 위태롭게하다,위험
 logic - 논리,논리학
-luggage - 짐,수화물
+luggage - 짐,수화물(=baggage)
 momentum - 추진력,힘
 necessarily - 반드시
 necessary - 필요한,필수적인
@@ -887,7 +890,7 @@ necessitate - 수반하다,필요로하다
 necessity - 필수품,필요성
 note - 주목하다,유의하다
 order - 주문하다
-organize - 조직하다
+organize - 조직하다,체계화하다
 outcome - 결과
 personal - 개인의
 personality - 개성,성격
@@ -904,7 +907,7 @@ priorto - ~이전에,~앞에
 public - 공공의,대중의
 regular - 정규의,규칙적인
 regularity - 규칙성
-regularly - 정기적으로
+regularly - 규칙적으로,정기적으로
 reject - 거절하다
 sharp - 예리한,급격한
 short - 모자라는,부족한
@@ -917,7 +920,7 @@ uncommon - 보기드문,비범한
 use - 사용하다,쓰다
 used - 중고의
 usefulness - 유용성,실용성
-user - 소비자,사용자
+user - 소비자,사용자(=utilizer)
 alert - 경고하다
 apart - 떨어져
 apparatus - 기구,장치
@@ -959,7 +962,7 @@ inaccurate - 부정확한
 inhalation - 흡입(제)
 inhale - 흡입하다,들이쉬다
 inhibition - 금지,억제
-join - 결합하다,가입하다
+join - 결합하다,참가하다,가입하다
 legible - 읽기쉬운
 liable - 자칫하면~하는,책임져야할
 livebroadcast - 생방송
@@ -1111,7 +1114,7 @@ nicely - 훌륭하게,잘
 overdrawn - 초과인출한
 overexpose - 지나치게 노출하다
 pleasant - 즐거운
-please - 기쁘게하다
+please - 기쁘게하다,만족시키다
 pleased - 기쁜,만족한
 pleasurable - 즐거운
 pleasure - 기쁨
@@ -1657,7 +1660,7 @@ presumably - 아마
 presumptive - 추정의
 procedural - 절차상의
 procedure - 진행,절차
-protest - 항의하다
+protest - 이의를제기하다,항의하다
 prove - 증명하다,입증하다
 resonate - 반항하다,울려퍼지다
 respond - 대답하다,응답하다
@@ -2077,7 +2080,7 @@ facilitator - 촉진자,용이하게하는사람(것)
 facility - 시설,설비
 fleetly - 신속하게,빨리
 formnow - 지금부터,이제부터
-grasp - 붙잡다,이해하다
+grasp - (단단히)붙잡다,이해하다
 hold - 소유하다,수용하다
 implant - 주입하다,이식하다
 inform - 알리다(=notify)

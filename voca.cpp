@@ -14,7 +14,7 @@ char* Voca_Mean(void)
 {
 	struct timeval t;
 	gettimeofday(&t,NULL);
-	cout << "HEO" <<endl;
+	//cout << "HEO" <<endl;
 	static char resultProtocol[1000];
 	memset(resultProtocol,0x00,sizeof(resultProtocol));
 	//char *resultProtocol = (char *)malloc(100);	
@@ -22,7 +22,6 @@ char* Voca_Mean(void)
 	FILE *ppfile = NULL;
 	//srand((unsigned)time(NULL) + (unsigned)getpid());
 	srand(t.tv_usec);
-	//srand(GetTickCount());	
 	char voca[100];
 	char mean[100];
 	char bound[3];
@@ -30,6 +29,7 @@ char* Voca_Mean(void)
 	memset(resultProtocol,0x00,sizeof(resultProtocol));
 	memset(voca,0x00,sizeof(voca));
 	memset(mean,0x00,sizeof(mean));
+	memset(bound,0x00,sizeof(bound));
 
 	ppfile = fopen("eng.txt","r");
 	
@@ -41,13 +41,6 @@ char* Voca_Mean(void)
 			break;
 		}
 	}
-	//fseek(ppfile,1,SEEK_CUR);
-	/*while(fscanf(ppfile,"%s %s %s",voca,bound,mean) > 0)
-	{
-		cout << "추출된 영단어는 " << voca << endl;
-		cout << "뜻은 " << mean << endl;
-		break;
-	}*/
 
 	int idx=0;
 	char a;
@@ -64,18 +57,8 @@ char* Voca_Mean(void)
 		mean[idx++] = a;
 	}
 
-	/*cout << "추출된 영단어는 " << voca << endl;
-	cout << "뜻은 " << mean << endl;
-	cout << "HEO"<< endl;*/
 	strcat(resultProtocol,voca);
-	//cout << "KYU"<< endl;
-	//strcat(resultProtocol,"%");
-	//cout << "JIN"<< endl;
 	strcat(resultProtocol,mean);
-	/*cout << "최종 " << "(" << "KAKAKAKA" << ")" << endl;
-	cout << "최종 " << "(" << resultProtocol << ")" << endl;
-	cout << "----------------------------"<< endl;*/
-
+	fclose(ppfile);
 	return resultProtocol;	
-	//return 100;
 }
