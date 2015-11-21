@@ -20,7 +20,7 @@ damage - 피해,손상
 damaged - 손상을입은,파손된
 damaging - 손해를끼치는,해로운
 damagingly - 피해가되게
-deal with - 처리하다,다루다
+deal with - 문제를처리하다,다루다
 decide - 결정하다,해결하다
 deciding - 결정적인
 decision - 결정,결단
@@ -78,7 +78,7 @@ abduct - 유괴하다,납치하다
 accelerate - 가속화하다
 access - 접근,출입,권한
 accessible - 접근하기쉬운
-accessory - 장신구,액세서리
+accessory - 장신구액세서리
 accordingly - 따라서,그러므로
 barely - 가까스로,거의~않다
 barring - ~이없으면
@@ -480,20 +480,20 @@ recipient - 수령자
 recline - 기대다,의지하다
 recognize - 분간하다,알아보다
 recommend - 추천하다
-set - 맞추다,차리다
-setting - 경우,환경
+set - 맞추다,배치하다,차리다
+setting - 경우환경
 shake - 흔들다
 strictly - 엄밀히,엄격하게
 terminate - 끝나다,종결되다
 track - 자취,철로
 tradition - 전통
-transcribe - 베끼다,번역하다
-unwavering - 확고한
+transcribe - 베끼다번역하다
+unwavering - 동요하지않은,확고한
 acquire - 얻다,획득하다
 addition - 첨가,부가
 additional - 부가적인,추가의
 additionally - 덧붙여,게다가
-address - 주소
+address - 주소,편지를보내다,검토하다
 book - 예약하다
 characteristic - 특징
 chart - 도표
@@ -510,7 +510,7 @@ electronic - 전자의
 electronically - 전자공학적으로
 electronics - 전자공학
 encircle - 둘러싸다,에워싸다
-finance - 재정,재무
+finance - 재정재무
 financial - 재정상의
 financially - 재정적으로
 financing - 자금조달
@@ -537,7 +537,7 @@ quietness - 고요
 real - 진짜의,진정한
 realism - 사실주의
 realist - 현실주의자
-realistic - 사실주의의
+realistic - 현시주의의사실주의의
 realistically - 사실적으로
 reality - 현실(성)
 realize - 깨닫다,이해하다
@@ -559,7 +559,7 @@ work - 일
 workplace - 일터,작업장
 act - 행동하다,실행하다
 active - 활발한
-actively - 활발하게
+actively - 활발하게,적극적으로
 activeness - 활약
 activity - 활동,운동
 advance - 진보,승진
@@ -597,12 +597,12 @@ means - 수단,방법
 mediation - 중재
 operate - 움직이다
 operation - 작용,운영
-operational - 운행가능한
+operational - 기능을다하는,운행가능한
 operative - 움직이는,작용하는
 operator - (전화국)교환원
 place - 배치하다,위치하다
 placement - 배치(=staffing)
-potentially - 잠재적으로
+potentially - 가능성있게,잠재적으로
 recent - 최근의
 recently - 최근에
 redesign - 디자인을 고치다
@@ -629,9 +629,9 @@ widely admired - 널리 칭송받는
 worth - 가치가 있는
 worth while - 애쓸 가치가있는
 worthy - 가치있는
-accountfor - 차지하다,~를설명하다
+accountfor - 차지하다,~를설명하다,
 add, - 더하다,첨가하다
-addict - 빠지게하다,열중하다
+addict - 빠지게하다,열중하다,
 advancein - ~에서의진보
 advice - 충고,조언
 advisable - 타당한,현명한
@@ -646,6 +646,7 @@ boost - 증가시키다
 broadknowledge - 폭넓은지식
 collate - 대조하다,맞추어보다
 concentrate - 집중하다
+contributor to - (출판물)등에의기고자
 criticize - 비판하다,비난하다
 current - 현재의,통용하는
 currently - 현재
@@ -657,7 +658,7 @@ deliverance - 공표,해방
 delivery - 배송,배달
 dramatic - 희곡의,극적인
 dramatically - 극적으로
-electric - 전기의,전자의
+electric - 전기의전자의
 electricity - 전력,전기
 endurance - 지구력,내구성
 engrave - 새기다,장식하다
@@ -668,7 +669,7 @@ inconvenience - 불편
 increase - 증가하다,늘어나다
 increasing - 늘어나는,증가하는
 increasingly - 점점더
-incur - 초래하다
+incur - 손실을입다,초래하다
 indecision - 우유부단
 locate - 위치하다,찾다
 location - 위치,장소
@@ -698,7 +699,7 @@ series - 연속,시리즈
 shrink - 움츠러들다,줄어들다
 translation - 번역
 undoubtedly - 틀림없이
-usual - 보통의,일상의
+usual - 보통의일상의
 usually - 보통,일반적으로
 withdraw - 회수하다인출하다
 withdrawal - 회수,인출
@@ -723,7 +724,7 @@ clear - 제거하다,처리하다
 clearance - 정리,재고정리
 clearly - 뚜렷하게,명료하게
 clearness - 명확함
-commitment to - 헌신,전념
+commitment to - ~에의헌신,전념
 consider - 고려하다
 considerable - 상당한
 considerably - 꽤
@@ -731,18 +732,18 @@ considerate - 이해심있는
 consideration - 고려
 constraint - 강제,제약
 dedication to - ~에의헌신
-delighted - 기뻐하는
+delighted - 기뻐하는,즐거워하는
 demolish - 폐지하다
 digit - 아라비아 숫자
 dimension - 치수,넓이
 diminish - 줄이다,감소하다
 disqualified - 자격을잃은
 enroll - 등록하다,기재하다
-ensure - 보장하다
+ensure - 보장하다,확실하게하다
 entrance - 입구
 entry - 참가,가입
 especially - 특히
-fascinate - 매혹하다
+fascinate - 매혹하다,반하게하다,
 fascinating - 매혹적인
 fascination - 매혹,매료
 force - 힘,세력,강요하다
@@ -760,12 +761,12 @@ nomination - 지명,임명
 optimist - 낙관주의자
 optimistic - 낙관적인,긍정적인
 optimistically - 낙관적으로
-optimize - 낙관하다
+optimize - 낙관하다,
 phone - 전화기, 전화하다
 piece - 부품
 process - 과정,공정,처리하다
 procession - 행렬,행진
-refresh - 새롭게하다
+refresh - 새롭게하다,
 refreshment - 가벼운음식물,다과
 solicit - 간청하다
 transmit - 보내다,전하다,
@@ -809,7 +810,7 @@ incline - 마음이 내키게하다
 indulge - 빠지다,탐닉하다
 ineptitude - 부적당
 inside - 안쪽의,내부의
-listen to - ~을 듣다
+listen to - ~을듣다
 normal - 표준의
 normalcy - 정상상태
 normality - 정상상태
@@ -819,7 +820,7 @@ perfect - 완벽한
 perfection - 완전,완성
 perfectly - 완전하게
 pioneer - 개척자
-plan - 계획,계획하다
+plan - 계획,계획하다,
 plate - 접시,간판
 precede - 앞서다
 proficient - 숙련된,능숙한
@@ -829,7 +830,7 @@ regard - 여기다,간주하다
 regarding - ~에관해서
 regardless - 개의치않고
 regardless of - ~에상관없이
-regret - 유감
+regret - 유감,유감으로생각하다
 regrettably - 유감스럽게
 settlement - 확정,결정
 shape - 모양,형태
@@ -1011,7 +1012,7 @@ deteriorate - 나쁘게하다,타락시키다
 detract - (주의를)돌리다
 distraction - 산만하게하는것,기분전환
 evident - 명백한,뚜렷한
-evidential - 증거에,근거한
+evidential - 증거에근거한
 evidently - 명백하게,분명히
 evidence - 증거,증명
 examine - 검사하다,조사하다
@@ -1030,7 +1031,7 @@ light - 가벼운
 likeable - 마음에드는
 look for - ~을 찾다
 look into - ~을 조사하다
-lookover - 훑어보다
+lookover - (서류등을)검토하다,훑어보다
 minimal - 최소한의
 minimally - 극미하게,최소한으로
 minimize - 극소화하다
@@ -1811,7 +1812,7 @@ return - 반환하다,회답하다
 returned - 반송된,돌아온
 reveal - 드러내다,폭로하다
 revelation - 폭로,적발
-review - 재검토하다
+review - 재조사하다,재검토하다
 site - 부지,장소
 stare - 응시하다
 struck - 동맹파업으로폐쇄중인
