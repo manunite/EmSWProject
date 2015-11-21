@@ -7,6 +7,8 @@
 #include <unistd.h>
 #include <time.h>
 
+#define total 5
+
 using namespace std;
 ////////////////////////////////////////
 GtkWidget *window;
@@ -26,8 +28,8 @@ char R_mean[200];
 char W_mean1[200];
 char W_mean2[200];
 char W_mean3[200];
-  int idx_R=0;
-  int idx_O=0;
+int idx_R=0;
+int idx_O=0;
 char result_Arr[300];
 char receive_Arr[300];
 char result_Arr1[300];
@@ -41,8 +43,9 @@ int CorrectNum;
 int WrongNum;
 int k;
 int AnswerIdx;
+int QuizCNT;
 
-
+//int DBcon(int Id,int QuizNum,int Correct,int Wrong);
 int main (int argc, char *argv[]);
 int euckr2utf8(char *source, char *dest, int dest_size) ;
 char* Voca_Mean(void);
@@ -130,19 +133,31 @@ void reset()
 
 void correct (GtkWidget *widget)
 {
+	QuizCNT++;
   g_print ("correct\n");
   gtk_label_set_text(GTK_LABEL(result),"Correct!");
   CorrectNum++;
-  //sleep(1);
+  if(QuizCNT == total)
+  {
+	  //DBcon("ID넣음",total,CorrectNum,WrongNum);
+	  exit(0);
+	  //뭔가 처리되어야함 ex. 어느 페이지로 갈지
+  }
   reset();
 }
 
 void noncorrect (GtkWidget *widget)
 {
+	QuizCNT++;
   g_print ("Wrong\n");
   gtk_label_set_text(GTK_LABEL(result),"Wrong Answer!");
   WrongNum++;
-  //sleep(1);
+  if(QuizCNT == total) 
+  {
+	  //DBcon("ID넣음",total,CorrectNum,WrongNum);
+	  exit(0);
+	  //뭔가 처리되어야함 ex. 어느 페이지로 갈지
+  }
   reset();
 }
 
@@ -217,8 +232,8 @@ void tokenizer2(char *receive1,char *str)
 }
 
 
-
-int main (int argc, char *argv[])
+//int main(int argc, char *argv[])
+int GTKmain (int ID)
 {
   char result_Arr[300];
   char receive_Arr[300];
@@ -279,7 +294,8 @@ int main (int argc, char *argv[])
 
   
 
-  gtk_init (&argc, &argv);
+  //gtk_init (&argc, &argv);
+   gtk_init (NULL, NULL);
 
   window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
 
