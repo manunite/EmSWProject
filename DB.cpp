@@ -38,23 +38,23 @@ try{
 	
 	printf("\nI am DBConnect Function\n");
 	driver = get_driver_instance();
-	con = driver->connect("tcp://127.0.0.1:3306/userInfo","root","1111"); //DB 커넥터 생성
+	con = driver->connect("tcp://127.0.0.1:3306/EmbeProject","root","1111"); //DB 커넥터 생성
 	cout << "SUCCESS Connection" << endl;
 	cout << "SUCCESS_Heart" << endl;
-	string StrQuery = "select totalQuiz,Correct,Wrong from userTable where UserId = ";
+	string StrQuery = "select totalQuiz,Correct,Wrong from userInfo where UserId = ";
            StrQuery += Id;
 	       StrQuery += "";
-	//cout << StrQuery << endl;
+	cout << StrQuery << endl;
 	stmt = con->createStatement();
 	rs = stmt->executeQuery(StrQuery);
 	
 	rs->next();
 	totalQuiz = rs->getInt("totalQuiz");
 	cout << "totalQuiz : " << totalQuiz << endl;
-	rs->next();
+	//rs->next();
 	CorrectNum = rs->getInt("Correct");
 	cout << "Correct : " << CorrectNum << endl;
-	rs->next();
+	//rs->next();
 	WrongNum = rs->getInt("Wrong");
 	cout << "WrongNum : " << WrongNum << endl;
 	
