@@ -26,6 +26,7 @@ const string& operator+=(string &str, const T &_ty)
 
 int DBcon(int Id,int QuizNum,int Correct,int Wrong)
 {
+	int rate=0;
 	int totalQuiz=0;
 	int CorrectNum = 0;
 	int WrongNum=0;
@@ -60,9 +61,19 @@ try{
 	
 	////////////////////////////////////////////////////////////////////////////////////////////
 	
+	
 	totalQuiz += QuizNum;
 	CorrectNum += Correct;
 	WrongNum += Wrong;
+	
+	rate = ((double)(((double)CorrectNum)/((double)totalQuiz)))*100;
+	cout << rate << endl;
+	
+	int level=0;
+	
+	if(rate >= 70) level = 1;
+	else if(rate >= 50) level = 2;
+	else level = 3;
 	
 	StrQuery = "update userInfo set totalQuiz = ";
 	StrQuery += totalQuiz;
@@ -70,6 +81,10 @@ try{
 	StrQuery += CorrectNum;
 	StrQuery += ",Wrong = ";
 	StrQuery += WrongNum;
+	StrQuery += ",Rate = ";
+	StrQuery += rate;
+	StrQuery += ",level = ";
+	StrQuery += level;
 	StrQuery += " where UserId = ";
 	StrQuery += Id;
 	StrQuery += "";
