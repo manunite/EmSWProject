@@ -18,6 +18,11 @@ GtkWidget *entry1;
 
 GtkWidget *gamelevel;
 
+
+GtkWidget *cb1;
+GtkWidget *cb2;
+GtkWidget *cb3;
+
   GtkWidget *btn1;
   GtkWidget *btn2;
 
@@ -52,17 +57,31 @@ blank= gtk_label_new("<<<<< Fill in the blank box below >>>>>");
 gtk_fixed_put(GTK_FIXED(fixed), blank, 15, 250);
 
 name = gtk_label_new("Name : ");
- gtk_fixed_put(GTK_FIXED(fixed), name, 15, 320);
+ gtk_fixed_put(GTK_FIXED(fixed), name, 15, 280);
 entry1 = gtk_entry_new();
- gtk_fixed_put(GTK_FIXED(fixed), entry1, 40, 320);
+ gtk_fixed_put(GTK_FIXED(fixed), entry1, 80, 280);
 
 age= gtk_label_new("Age : ");
- gtk_fixed_put(GTK_FIXED(fixed), age, 15, 340);
+ gtk_fixed_put(GTK_FIXED(fixed), age, 15, 310);
   entry2 = gtk_entry_new();
- gtk_fixed_put(GTK_FIXED(fixed), entry2, 40, 340);
+ gtk_fixed_put(GTK_FIXED(fixed), entry2, 80, 310);
 
-gamelevel= gtk_label_new("Choose the game level");
- gtk_fixed_put(GTK_FIXED(fixed), gamelevel, 15, 360);
+gamelevel= gtk_label_new("Choose the game level : ");
+ gtk_fixed_put(GTK_FIXED(fixed), gamelevel, 15, 350);
+
+
+cb1 = gtk_check_button_new_with_label("High Level");
+gtk_fixed_put(GTK_FIXED(fixed), cb1, 15, 370);
+
+cb2 = gtk_check_button_new_with_label("Middle Level");
+gtk_fixed_put(GTK_FIXED(fixed), cb2, 15, 390);
+
+cb3 = gtk_check_button_new_with_label("Low Level");
+gtk_fixed_put(GTK_FIXED(fixed), cb3, 15, 410);
+
+
+
+
 
 
   btn1 = gtk_button_new_with_label("start");
