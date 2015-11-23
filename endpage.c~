@@ -12,16 +12,11 @@ GtkWidget *blank;
 GtkWidget *name;
 GtkWidget *age;
 
-GtkWidget *entry1;
-  GtkWidget *entry2;
+//GtkWidget *entry1;
+  //GtkWidget *entry2;
 
 
 GtkWidget *gamelevel;
-
-
-GtkWidget *cb1;
-GtkWidget *cb2;
-GtkWidget *cb3;
 
   GtkWidget *btn1;
   GtkWidget *btn2;
@@ -36,49 +31,35 @@ GtkWidget *cb3;
   fixed = gtk_fixed_new();
   gtk_container_add(GTK_CONTAINER(window), fixed);
 
+////////////////////////////////////////////////////////////////////////////
 
 label = gtk_label_new("-----------------------------------------\n\
 English VOCA Win Out!\n\
 -----------------------------------------\n\
 \n\
--team name-\n\
+Did you have fun? ^^\n\
 \n\
-If you win the game, can achieve the goals about vacabulary.\n\
-\n\
-Please review and give your comments ( aaa@gmail.com )\n\
-\n\
-Enjoy the English:D");
+Here, We show your the result of the game.");
+
   gtk_fixed_put(GTK_FIXED(fixed), label, 15, 15);
 
 label2= gtk_label_new("***************************************************************************************************");
- gtk_fixed_put(GTK_FIXED(fixed), label2, 1, 230);
+ gtk_fixed_put(GTK_FIXED(fixed), label2, 1, 150);
 
-blank= gtk_label_new("<<<<< Fill in the blank box below >>>>>");
-gtk_fixed_put(GTK_FIXED(fixed), blank, 15, 250);
+blank= gtk_label_new("<<<<< Your information and selection >>>>>");
+gtk_fixed_put(GTK_FIXED(fixed), blank, 15, 170);
 
 name = gtk_label_new("Name : ");
- gtk_fixed_put(GTK_FIXED(fixed), name, 15, 280);
-entry1 = gtk_entry_new();
- gtk_fixed_put(GTK_FIXED(fixed), entry1, 80, 280);
+ gtk_fixed_put(GTK_FIXED(fixed), name, 15, 200);
+//user name
 
 age= gtk_label_new("Age : ");
- gtk_fixed_put(GTK_FIXED(fixed), age, 15, 310);
-  entry2 = gtk_entry_new();
- gtk_fixed_put(GTK_FIXED(fixed), entry2, 80, 310);
+ gtk_fixed_put(GTK_FIXED(fixed), age, 15, 220);
+//user age
 
-gamelevel= gtk_label_new("Choose the game level : ");
- gtk_fixed_put(GTK_FIXED(fixed), gamelevel, 15, 350);
-
-
-cb1 = gtk_check_button_new_with_label("High Level");
-gtk_fixed_put(GTK_FIXED(fixed), cb1, 15, 370);
-
-cb2 = gtk_check_button_new_with_label("Middle Level");
-gtk_fixed_put(GTK_FIXED(fixed), cb2, 15, 395);
-
-cb3 = gtk_check_button_new_with_label("Low Level");
-gtk_fixed_put(GTK_FIXED(fixed), cb3, 15, 420);
-
+gamelevel= gtk_label_new("game level : ");
+gtk_fixed_put(GTK_FIXED(fixed), age, 15, 240);
+//user game level
 
 
 
