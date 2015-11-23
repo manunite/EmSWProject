@@ -29,8 +29,8 @@ GtkWidget *cb3;
   gtk_init(&argc, &argv);
 
   window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-  gtk_window_set_title(GTK_WINDOW(window), "GtkFixed");
-  gtk_window_set_default_size(GTK_WINDOW(window), 600, 800);
+  gtk_window_set_title(GTK_WINDOW(window), " English Voca Win Out !! ");
+  gtk_window_set_default_size(GTK_WINDOW(window), 500, 520);
   gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
 
   fixed = gtk_fixed_new();
@@ -74,22 +74,22 @@ cb1 = gtk_check_button_new_with_label("High Level");
 gtk_fixed_put(GTK_FIXED(fixed), cb1, 15, 370);
 
 cb2 = gtk_check_button_new_with_label("Middle Level");
-gtk_fixed_put(GTK_FIXED(fixed), cb2, 15, 390);
+gtk_fixed_put(GTK_FIXED(fixed), cb2, 15, 395);
 
 cb3 = gtk_check_button_new_with_label("Low Level");
-gtk_fixed_put(GTK_FIXED(fixed), cb3, 15, 410);
+gtk_fixed_put(GTK_FIXED(fixed), cb3, 15, 420);
 
 
 
 
 
 
-  btn1 = gtk_button_new_with_label("start");
-  gtk_fixed_put(GTK_FIXED(fixed), btn1, 15, 750);
-  gtk_widget_set_size_request(btn1, 80, 30);
+  btn1 = gtk_button_new_with_label("GAME start");
+  gtk_fixed_put(GTK_FIXED(fixed), btn1, 15, 480);
+  gtk_widget_set_size_request(btn1, 150, 30);
 
   btn2 = gtk_button_new_with_label("exit");
-  gtk_fixed_put(GTK_FIXED(fixed), btn2, 100, 750);
+  gtk_fixed_put(GTK_FIXED(fixed), btn2, 180, 480);
   gtk_widget_set_size_request(btn2, 80, 30);
 
 
