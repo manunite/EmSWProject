@@ -52,12 +52,16 @@ void show_question(GtkWidget *widget, gpointer window) {
 void show_warning(GtkWidget *widget, gpointer window) {
     
   GtkWidget *dialog;
+
   dialog = gtk_message_dialog_new(GTK_WINDOW(window),
             GTK_DIALOG_DESTROY_WITH_PARENT,
             GTK_MESSAGE_WARNING,
             GTK_BUTTONS_OK,
             "Fill your information in box and choose the game");
   gtk_window_set_title(GTK_WINDOW(dialog), "Join");
+
+
+
   gtk_dialog_run(GTK_DIALOG(dialog));
   gtk_widget_destroy(dialog);
 }
@@ -72,12 +76,17 @@ int main(int argc, char *argv[]) {
   GtkWidget *start;
   GtkWidget *quit;
 
+GtkWidget *label1;
+ GtkWidget *entry1;
+
+
+////////////////////////////////////
   gtk_init(&argc, &argv);
 
   window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
   gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
-  gtk_window_set_default_size(GTK_WINDOW(window), 220, 150);
-  gtk_window_set_title(GTK_WINDOW(window), "Message dialogs");
+  gtk_window_set_default_size(GTK_WINDOW(window), 600, 400);
+  gtk_window_set_title(GTK_WINDOW(window), "English VOCA Win Out!");
 
   table = gtk_table_new(2, 2, TRUE);
   gtk_table_set_row_spacings(GTK_TABLE(table), 2);
