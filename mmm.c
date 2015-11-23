@@ -92,6 +92,9 @@ gtk_fixed_put(GTK_FIXED(fixed), cb3, 15, 420);
   gtk_fixed_put(GTK_FIXED(fixed), btn2, 180, 480);
   gtk_widget_set_size_request(btn2, 80, 30);
 
+g_signal_connect(G_OBJECT(btn2), "clicked", 
+      G_CALLBACK(gtk_main_quit), G_OBJECT(window));
+
 
 
 
