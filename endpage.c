@@ -18,6 +18,12 @@ GtkWidget *age;
 
 GtkWidget *gamelevel;
 
+GtkWidget *label3;
+GtkWidget *gameresult;
+GtkWidget *resultlevel;
+
+
+
   GtkWidget *btn1;
   GtkWidget *btn2;
 
@@ -50,22 +56,32 @@ blank= gtk_label_new("<<<<< Your information and selection >>>>>");
 gtk_fixed_put(GTK_FIXED(fixed), blank, 15, 170);
 
 name = gtk_label_new("Name : ");
- gtk_fixed_put(GTK_FIXED(fixed), name, 15, 200);
+ gtk_fixed_put(GTK_FIXED(fixed), name, 15, 190);
 //user name
 
 age= gtk_label_new("Age : ");
- gtk_fixed_put(GTK_FIXED(fixed), age, 15, 220);
+ gtk_fixed_put(GTK_FIXED(fixed), age, 15, 210);
 //user age
 
 gamelevel= gtk_label_new("game level : ");
-gtk_fixed_put(GTK_FIXED(fixed), age, 15, 240);
+gtk_fixed_put(GTK_FIXED(fixed), age, 15, 230);
 //user game level
 
 
+//GtkWidget *label3;
+label3= gtk_label_new("<<<<< Your Game Result >>>>>");
+gtk_fixed_put(GTK_FIXED(fixed), label3, 15, 250);
+
+//GtkWidget *gameresult;
+gameresult= gtk_label_new("result : ");
+gtk_fixed_put(GTK_FIXED(fixed), gameresult, 15, 270);
+
+//GtkWidget *resultlevel;
+resultlevel= gtk_label_new("result level : ");
+gtk_fixed_put(GTK_FIXED(fixed), resultlevel, 15, 290);
 
 
-
-  btn1 = gtk_button_new_with_label("GAME start");
+  btn1 = gtk_button_new_with_label("GAME REstart");
   gtk_fixed_put(GTK_FIXED(fixed), btn1, 15, 480);
   gtk_widget_set_size_request(btn1, 150, 30);
 
