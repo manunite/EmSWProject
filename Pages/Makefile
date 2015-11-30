@@ -6,8 +6,11 @@ DBLIB = mysqlcppconn
 startPage : libQuiz.a
 	g++ -o startPage startPage.cpp -L. -lQuiz -L/home/heo/EmProject/DB -lDB -L$(DBLIBPATH) -l$(DBLIB) $(gtk)
 
-libQuiz.a : gtk_Main.o voca.o
-	ar rv libQuiz.a gtk_Main.o voca.o
+libQuiz.a : gtk_Main.o voca.o endPage.o
+	ar rv libQuiz.a gtk_Main.o voca.o endPage.o
+
+endPage.o : endPage.cpp
+	g++ -c endPage.cpp `pkg-config --cflags --libs gtk+-2.0`
 
 gtk_Main.o : gtk_Main.cpp
 	g++ -c gtk_Main.cpp `pkg-config --cflags --libs gtk+-2.0`

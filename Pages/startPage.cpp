@@ -22,9 +22,10 @@ void process(GtkWidget *btn1, gpointer data)
 	strncpy(NAMENAME,namea,strlen(namea));
 	printf("-----------%s--------------",NAMENAME);
 	
-	GTKmain(NAMENAME);
 	//GTKmain(UserName);
 	gtk_widget_destroy(windows);
+	
+	GTKmain(NAMENAME);
 	//end();
 }
 

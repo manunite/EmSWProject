@@ -22,6 +22,7 @@ GtkWidget *window;
   GtkWidget *QuizIntro, *Quiz;
   GtkWidget *result;
   GtkWidget *Title;
+  static int CN,WN;
 ////////////////////////////////////////
 char R_voca[200];
 char R_mean[200];
@@ -55,6 +56,7 @@ void tokenizer2(char *receive1,char *str);
 void tokenizer(char *receive1,char *receive2,char *str);
 void noncorrect (GtkWidget *widget);
 void correct (GtkWidget *widget);
+int endPage(char *val,int a,int b);
 
 void reset()
 {
@@ -142,7 +144,12 @@ void correct (GtkWidget *widget)
   if(QuizCNT == total)
   {
 	  DBcon(UserName,total,CorrectNum,WrongNum);
-	  exit(0);
+	  //exit(0);
+	  //gtk_widget_destroy(window);
+	  gtk_widget_hide(window);
+	  endPage(UserName,CorrectNum,WrongNum);
+	  //exit(0);
+	  
 	  //뭔가 처리되어야함 ex. 어느 페이지로 갈지
   }
   reset();
@@ -157,7 +164,11 @@ void noncorrect (GtkWidget *widget)
   if(QuizCNT == total) 
   {
 	  DBcon(UserName,total,CorrectNum,WrongNum);
-	  exit(0);
+	  //exit(0);
+	  //gtk_widget_destroy(window);
+	  gtk_widget_hide(window);
+	  endPage(UserName,CorrectNum,WrongNum);
+	  //exit(0);
 	  //뭔가 처리되어야함 ex. 어느 페이지로 갈지
   }
   reset();

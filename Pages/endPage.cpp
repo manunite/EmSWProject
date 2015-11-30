@@ -1,9 +1,33 @@
 #include <gtk/gtk.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
 
-int end(void) {
-//int end(int argc, char *argv[]) {    
-  GtkWidget *window;
-  GtkWidget *fixed;
+using namespace std;
+
+char Name[100];
+
+struct node {
+	int value1;
+	int value2;
+};
+
+
+struct node DBcon_R(char *user);
+
+int endPage(char *val,int a,int b) {
+//int end(int argc, char *argv[]) {
+strncpy(Name,val,strlen(val));    
+cout << Name << endl;
+struct node results;
+results = DBcon_R(Name);
+
+//printf("%d %d",results->value,results->next->value);
+printf("%d %d %d %d\n",results.value1,results.value2,a,b);
+
+GtkWidget *window;
+GtkWidget *fixed;
 GtkWidget *label;
 
 GtkWidget *label2;
