@@ -1,11 +1,9 @@
-tempMain : DB.o gtk_Main.o voca.o
-	g++ -o tempMain tempMain.cpp gtk_Main.o voca.o DB.o -I/usr/include/cppconn `pkg-config --cflags --libs gtk+-2.0` -L/usr/lib -lmysqlcppconn
+DIR = DB Pages
+.PHONY : all clean
 
-DB.o : DB.cpp
-	g++ -c DB.cpp -I/usr/include/cppconn
+
+all :
+	@for d in $(DIR); do $(MAKE) -C $$d; done
 	
-gtk_Main.o : gtk_Main.cpp
-	g++ -c gtk_Main.cpp `pkg-config --cflags --libs gtk+-2.0`
-
-voca.o : voca.cpp
-	g++ -c voca.cpp
+clean :
+	@for d in $(DIR); do $(MAKE) -C $$d clean; done
