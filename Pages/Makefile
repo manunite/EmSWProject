@@ -3,8 +3,8 @@ DBINCLUDE = /usr/include/cppconn
 DBLIBPATH = /usr/lib
 DBLIB = mysqlcppconn
 
-quizMain : libQuiz.a
-	g++ -o quizMain quizMain.cpp -L. -lQuiz -L/home/heo/EmProject/DB -lDB -L$(DBLIBPATH) -l$(DBLIB) $(gtk)
+startPage : libQuiz.a
+	g++ -o startPage startPage.cpp -L. -lQuiz -L/home/heo/EmProject/DB -lDB -L$(DBLIBPATH) -l$(DBLIB) $(gtk)
 
 libQuiz.a : gtk_Main.o voca.o
 	ar rv libQuiz.a gtk_Main.o voca.o

@@ -3,9 +3,9 @@
 
 using namespace std;
 
-int GTKmain(int ID);
+int GTKmain(char *name);
 
-int main(void)
+int quizMain(char *name)
 {
-	GTKmain(1);
+	GTKmain(name);
 }

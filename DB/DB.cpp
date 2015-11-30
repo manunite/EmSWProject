@@ -13,6 +13,7 @@
 
 using namespace sql;
 using namespace std;
+int Id;
 int flag = 0;
 
 template <class T>
@@ -24,7 +25,7 @@ const string& operator+=(string &str, const T &_ty)
 	return str;
 }
 
-int DBcon(int Id,int QuizNum,int Correct,int Wrong)
+int DBcon(char *user,int QuizNum,int Correct,int Wrong)
 {
 	int rate=0;
 	int totalQuiz=0;
@@ -40,11 +41,23 @@ try{
 	printf("\nI am DBConnect Function\n");
 	driver = get_driver_instance();
 	con = driver->connect("tcp://127.0.0.1:3306/EmbeProject","root","1111"); //DB 커넥터 생성
-	cout << "SUCCESS Connection" << endl;
-	cout << "SUCCESS_Heart" << endl;
-	string StrQuery = "select totalQuiz,Correct,Wrong from userInfo where UserId = ";
+	
+	string StrQuery = "select UserId from userInfo where UserName = '";
+		   StrQuery += user;
+		   StrQuery += "'";
+	stmt = con->createStatement();
+	rs = stmt->executeQuery(StrQuery);
+	rs->next();
+	Id = rs->getInt("UserId");
+	
+	//memset(StrQuery,0x00,strlen(StrQuery));
+	//StrQuery = NULL;
+	
+		   StrQuery = "select totalQuiz,Correct,Wrong from userInfo where UserId = ";
            StrQuery += Id;
 	       StrQuery += "";
+	       
+	       
 	cout << StrQuery << endl;
 	stmt = con->createStatement();
 	rs = stmt->executeQuery(StrQuery);

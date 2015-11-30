@@ -29,6 +29,7 @@ char W_mean1[200];
 char W_mean2[200];
 char W_mean3[200];
 int UserId;
+char UserName[30];
 int idx_R=0;
 int idx_O=0;
 char result_Arr[300];
@@ -46,7 +47,7 @@ int k;
 int AnswerIdx;
 int QuizCNT;
 
-int DBcon(int Id,int QuizNum,int Correct,int Wrong);
+int DBcon(char *user,int QuizNum,int Correct,int Wrong);
 //int main (int argc, char *argv[]);
 int euckr2utf8(char *source, char *dest, int dest_size) ;
 char* Voca_Mean(void);
@@ -140,7 +141,7 @@ void correct (GtkWidget *widget)
   CorrectNum++;
   if(QuizCNT == total)
   {
-	  DBcon(UserId,total,CorrectNum,WrongNum);
+	  DBcon(UserName,total,CorrectNum,WrongNum);
 	  exit(0);
 	  //뭔가 처리되어야함 ex. 어느 페이지로 갈지
   }
@@ -155,7 +156,7 @@ void noncorrect (GtkWidget *widget)
   WrongNum++;
   if(QuizCNT == total) 
   {
-	  DBcon(UserId,total,CorrectNum,WrongNum);
+	  DBcon(UserName,total,CorrectNum,WrongNum);
 	  exit(0);
 	  //뭔가 처리되어야함 ex. 어느 페이지로 갈지
   }
@@ -234,9 +235,10 @@ void tokenizer2(char *receive1,char *str)
 
 
 //int main(int argc, char *argv[])
-int GTKmain(int ID)
+int GTKmain(char *name)
 {
-  UserId = ID;
+  //UserId = ID;
+  strncpy(UserName,name,strlen(name));
   char result_Arr[300];
   char receive_Arr[300];
   int euclen1,euclen2,euclen3,euclen4,euclen5;
