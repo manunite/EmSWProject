@@ -34,16 +34,17 @@ void process(GtkWidget *btn1, gpointer data)
 int main(int argc, char *argv[]) {
     
   
-  GtkWidget *fixed;
+ GtkWidget *fixed;
 GtkWidget *label;
 
 GtkWidget *label2;
 
 GtkWidget *blank;
-GtkWidget *names;
-GtkWidget *age;
+GtkWidget *name;
+//GtkWidget *age;
 
-
+GtkWidget *entry1;
+  GtkWidget *entry2;
 
 
 GtkWidget *gamelevel;
@@ -55,8 +56,7 @@ GtkWidget *cb3;
 
   GtkWidget *btn1;
   GtkWidget *btn2;
-GtkWidget *entry1;
-GtkWidget *entry2;
+
   gtk_init(&argc, &argv);
 
   windows = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -87,35 +87,35 @@ label2= gtk_label_new("*********************************************************
 blank= gtk_label_new("<<<<< Fill in the blank box below >>>>>");
 gtk_fixed_put(GTK_FIXED(fixed), blank, 15, 250);
 
-///////////////////////////////////////////////////////////////////////////////////
-names = gtk_label_new("Name : ");
- gtk_fixed_put(GTK_FIXED(fixed), names, 15, 280);
+name = gtk_label_new("Name : ");
+ gtk_fixed_put(GTK_FIXED(fixed), name, 15, 280);
 entry1 = gtk_entry_new();
-entry1 = gtk_entry_new_with_max_length(70);
-//entry1.connect("activate", self.enter_callback, entry1)
-//g_signal_connect (entry1, "activate",G_CALLBACK (enter_callback),entry1);
  gtk_fixed_put(GTK_FIXED(fixed), entry1, 80, 280);
- gtk_entry_set_text(GTK_ENTRY(entry1), "Insert You Name");
- gtk_widget_show(entry1);
- //gtk_box_pack_start(GTK_BOX(hbox), entry, FALSE, TRUE, 1);
 
+/*
 age= gtk_label_new("Age : ");
  gtk_fixed_put(GTK_FIXED(fixed), age, 15, 310);
   entry2 = gtk_entry_new();
  gtk_fixed_put(GTK_FIXED(fixed), entry2, 80, 310);
+*/
 
 gamelevel= gtk_label_new("Choose the game level : ");
- gtk_fixed_put(GTK_FIXED(fixed), gamelevel, 15, 350);
-/////////////////////////////////////////////////////////////////////////////////////
+ gtk_fixed_put(GTK_FIXED(fixed), gamelevel, 15, 320);
+
 
 cb1 = gtk_check_button_new_with_label("High Level");
-gtk_fixed_put(GTK_FIXED(fixed), cb1, 15, 370);
+gtk_fixed_put(GTK_FIXED(fixed), cb1, 15, 343);
 
 cb2 = gtk_check_button_new_with_label("Middle Level");
-gtk_fixed_put(GTK_FIXED(fixed), cb2, 15, 395);
+gtk_fixed_put(GTK_FIXED(fixed), cb2, 15, 368);
 
 cb3 = gtk_check_button_new_with_label("Low Level");
-gtk_fixed_put(GTK_FIXED(fixed), cb3, 15, 420);
+gtk_fixed_put(GTK_FIXED(fixed), cb3, 15, 391);
+
+
+
+
+
 
   btn1 = gtk_button_new_with_label("GAME start");
   gtk_fixed_put(GTK_FIXED(fixed), btn1, 15, 480);
@@ -127,7 +127,12 @@ gtk_fixed_put(GTK_FIXED(fixed), cb3, 15, 420);
   
   g_signal_connect(btn1, "clicked", G_CALLBACK(process), entry1);
 
-  g_signal_connect(G_OBJECT(btn2), "clicked", G_CALLBACK(gtk_main_quit), G_OBJECT(windows));
+  btn2 = gtk_button_new_with_label("exit");
+  gtk_fixed_put(GTK_FIXED(fixed), btn2, 180, 480);
+  gtk_widget_set_size_request(btn2, 80, 30);
+
+g_signal_connect(G_OBJECT(btn2), "clicked", 
+      G_CALLBACK(gtk_main_quit), G_OBJECT(windows));
 
 
 

@@ -7,10 +7,15 @@
 using namespace std;
 
 char Name[100];
+char A[10];
+char B[10];
+char C[10];
+int lel;
 
 struct node {
 	int value1;
 	int value2;
+	int value3;
 };
 
 
@@ -23,18 +28,36 @@ cout << Name << endl;
 struct node results;
 results = DBcon_R(Name);
 
-//printf("%d %d",results->value,results->next->value);
-printf("%d %d %d %d\n",results.value1,results.value2,a,b);
+printf("%d %d %d %d %d\n",results.value1,results.value2,results.value3,a,b);
+
+lel = results.value3;
+C[0] = lel+48;
+
+if(a>=10)
+{
+	A[0] = (a/10)+48;
+	A[1] = (a%10)+48;
+}
+else if(a<10) A[0] = a+48;
+
+if(b>=10)
+{
+	B[0] = (a/10)+48;
+	B[1] = (b%10)+48;
+}
+else if(b<10) B[0] = b+48;
+
+
 
 GtkWidget *window;
-GtkWidget *fixed;
+  GtkWidget *fixed;
 GtkWidget *label;
 
 GtkWidget *label2;
 
 GtkWidget *blank;
 GtkWidget *name;
-GtkWidget *age;
+//GtkWidget *;
 
 //GtkWidget *entry1;
   //GtkWidget *entry2;
@@ -43,16 +66,26 @@ GtkWidget *age;
 GtkWidget *gamelevel;
 
 GtkWidget *label3;
-GtkWidget *gameresult;
+//GtkWidget *gameresult;
 GtkWidget *resultlevel;
+
+GtkWidget *correct_num;
+GtkWidget *wrong_num;
+
+GtkWidget *Info;
+
+GtkWidget *db_name;
+GtkWidget *db_gamelvl;
+GtkWidget *db_resultlvl;
+GtkWidget *db_corNum;
+GtkWidget *db_WroNum;
 
 
 
   GtkWidget *btn1;
   GtkWidget *btn2;
 
-  //gtk_init(&argc, &argv);
-  gtk_init(NULL,NULL);
+  gtk_init(NULL, NULL);
 
   window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
   gtk_window_set_title(GTK_WINDOW(window), " English Voca Win Out !! ");
@@ -78,32 +111,50 @@ label2= gtk_label_new("*********************************************************
  gtk_fixed_put(GTK_FIXED(fixed), label2, 1, 150);
 
 blank= gtk_label_new("<<<<< Your information and selection >>>>>");
-gtk_fixed_put(GTK_FIXED(fixed), blank, 15, 170);
+gtk_fixed_put(GTK_FIXED(fixed), blank, 15, 180);
 
 name = gtk_label_new("Name : ");
- gtk_fixed_put(GTK_FIXED(fixed), name, 15, 190);
+ gtk_fixed_put(GTK_FIXED(fixed), name, 15, 210);
 //user name
 
-age= gtk_label_new("Age : ");
- gtk_fixed_put(GTK_FIXED(fixed), age, 15, 210);
-//user age
+db_name = gtk_label_new(Name);
+ gtk_fixed_put(GTK_FIXED(fixed), db_name, 80, 210);
 
-gamelevel= gtk_label_new("game level : ");
-gtk_fixed_put(GTK_FIXED(fixed), age, 15, 230);
+gamelevel= gtk_label_new("Game Level : ");
+gtk_fixed_put(GTK_FIXED(fixed), gamelevel, 15, 240);
 //user game level
+db_gamelvl = gtk_label_new(" ");
+ gtk_fixed_put(GTK_FIXED(fixed), db_gamelvl, 30, 240);
 
 
 //GtkWidget *label3;
 label3= gtk_label_new("<<<<< Your Game Result >>>>>");
-gtk_fixed_put(GTK_FIXED(fixed), label3, 15, 250);
-
-//GtkWidget *gameresult;
-gameresult= gtk_label_new("result : ");
-gtk_fixed_put(GTK_FIXED(fixed), gameresult, 15, 270);
+gtk_fixed_put(GTK_FIXED(fixed), label3, 15, 270);
 
 //GtkWidget *resultlevel;
-resultlevel= gtk_label_new("result level : ");
-gtk_fixed_put(GTK_FIXED(fixed), resultlevel, 15, 290);
+resultlevel= gtk_label_new("Result Level : ");
+gtk_fixed_put(GTK_FIXED(fixed), resultlevel, 15, 300);
+
+db_resultlvl = gtk_label_new(C);
+ gtk_fixed_put(GTK_FIXED(fixed), db_resultlvl, 110, 300);
+ 
+ Info = gtk_label_new("** Level 1 : Top Class / Level 2 : Middle Class / Level 3 : NoAnswer **");
+gtk_fixed_put(GTK_FIXED(fixed), Info, 30, 330);
+
+//GtkWidget *correct_num;
+resultlevel= gtk_label_new("Correct Num : ");
+gtk_fixed_put(GTK_FIXED(fixed), resultlevel, 15, 360);
+
+db_corNum = gtk_label_new(A);
+ gtk_fixed_put(GTK_FIXED(fixed), db_corNum, 120, 360);
+
+
+//GtkWidget *wrong_num;
+resultlevel= gtk_label_new("Wrong Num : ");
+gtk_fixed_put(GTK_FIXED(fixed), resultlevel, 15, 390);
+
+db_WroNum = gtk_label_new(B);
+ gtk_fixed_put(GTK_FIXED(fixed), db_WroNum, 110, 390);
 
 
   btn1 = gtk_button_new_with_label("GAME REstart");
@@ -114,7 +165,7 @@ gtk_fixed_put(GTK_FIXED(fixed), resultlevel, 15, 290);
   gtk_fixed_put(GTK_FIXED(fixed), btn2, 180, 480);
   gtk_widget_set_size_request(btn2, 80, 30);
 
-g_signal_connect(G_OBJECT(btn2), "clicked", 
+g_signal_connect(G_OBJECT(btn2), "clicked",
       G_CALLBACK(gtk_main_quit), G_OBJECT(window));
 
 

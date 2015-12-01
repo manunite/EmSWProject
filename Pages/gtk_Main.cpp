@@ -326,7 +326,7 @@ int GTKmain(char *name)
 
   label_Name = gtk_label_new("Name");
   label_Diff = gtk_label_new("Difficult");
-  input_Name = gtk_label_new("만들어야함");
+  input_Name = gtk_label_new(UserName);
   input_Diff = gtk_label_new("만들어야함");
   QuizIntro = gtk_label_new("다음 단어의 뜻을 고르시오.");
   Quiz = gtk_label_new(R_voca);
