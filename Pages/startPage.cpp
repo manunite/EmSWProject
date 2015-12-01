@@ -9,8 +9,9 @@
 GtkWidget *windows;
 const gchar *namea;
 char NAMENAME[100];
+char diff[20];
 
-int GTKmain(char *name);
+int GTKmain(char *name, char *dif);
 int end(void);
 
 void process(GtkWidget *btn1, gpointer data)
@@ -25,8 +26,30 @@ void process(GtkWidget *btn1, gpointer data)
 	//GTKmain(UserName);
 	gtk_widget_destroy(windows);
 	
-	GTKmain(NAMENAME);
+	GTKmain(NAMENAME,diff);
 	//end();
+}
+
+void check1(void)
+{
+	memset(diff,0x00,sizeof(diff));
+	strncpy(diff,"HIGH LEVEL",strlen("HIGH LEVEL"));
+	printf("%s",diff);
+	return ;
+}
+void check2(void)
+{
+	memset(diff,0x00,sizeof(diff));
+	strncpy(diff,"MIDDLE LEVEL",strlen("MIDDLE LEVEL"));
+	printf("%s",diff);
+	return ;
+}
+void check3(void)
+{
+	memset(diff,0x00,sizeof(diff));
+	strncpy(diff,"LOW LEVEL",strlen("LOW LEVEL"));
+	printf("%s",diff);
+	return ;
 }
 
 
@@ -113,7 +136,11 @@ cb3 = gtk_check_button_new_with_label("Low Level");
 gtk_fixed_put(GTK_FIXED(fixed), cb3, 15, 391);
 
 
-
+///////////////////////////////////////////////////
+gtk_signal_connect(GTK_OBJECT(cb1),"toggled",GTK_SIGNAL_FUNC(check1),NULL);
+gtk_signal_connect(GTK_OBJECT(cb2),"toggled",GTK_SIGNAL_FUNC(check2),NULL);
+gtk_signal_connect(GTK_OBJECT(cb3),"toggled",GTK_SIGNAL_FUNC(check3),NULL);
+///////////////////////////////////////////////////
 
 
 

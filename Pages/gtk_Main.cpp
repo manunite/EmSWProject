@@ -29,6 +29,7 @@ char R_mean[200];
 char W_mean1[200];
 char W_mean2[200];
 char W_mean3[200];
+char DIFFER[100];
 int UserId;
 char UserName[30];
 int idx_R=0;
@@ -56,7 +57,7 @@ void tokenizer2(char *receive1,char *str);
 void tokenizer(char *receive1,char *receive2,char *str);
 void noncorrect (GtkWidget *widget);
 void correct (GtkWidget *widget);
-int endPage(char *val,int a,int b);
+int endPage(char *val,int a,int b,char *c);
 
 void reset()
 {
@@ -147,7 +148,7 @@ void correct (GtkWidget *widget)
 	  //exit(0);
 	  //gtk_widget_destroy(window);
 	  gtk_widget_hide(window);
-	  endPage(UserName,CorrectNum,WrongNum);
+	  endPage(UserName,CorrectNum,WrongNum,DIFFER);
 	  //exit(0);
 	  
 	  //뭔가 처리되어야함 ex. 어느 페이지로 갈지
@@ -167,7 +168,7 @@ void noncorrect (GtkWidget *widget)
 	  //exit(0);
 	  //gtk_widget_destroy(window);
 	  gtk_widget_hide(window);
-	  endPage(UserName,CorrectNum,WrongNum);
+	  endPage(UserName,CorrectNum,WrongNum,DIFFER);
 	  //exit(0);
 	  //뭔가 처리되어야함 ex. 어느 페이지로 갈지
   }
@@ -246,10 +247,11 @@ void tokenizer2(char *receive1,char *str)
 
 
 //int main(int argc, char *argv[])
-int GTKmain(char *name)
+int GTKmain(char *name,char *dif)
 {
   //UserId = ID;
   strncpy(UserName,name,strlen(name));
+  strncpy(DIFFER,dif,strlen(dif));
   char result_Arr[300];
   char receive_Arr[300];
   int euclen1,euclen2,euclen3,euclen4,euclen5;
@@ -327,7 +329,7 @@ int GTKmain(char *name)
   label_Name = gtk_label_new("Name");
   label_Diff = gtk_label_new("Difficult");
   input_Name = gtk_label_new(UserName);
-  input_Diff = gtk_label_new("만들어야함");
+  input_Diff = gtk_label_new(DIFFER);
   QuizIntro = gtk_label_new("다음 단어의 뜻을 고르시오.");
   Quiz = gtk_label_new(R_voca);
   Title = gtk_label_new("문제풀이");

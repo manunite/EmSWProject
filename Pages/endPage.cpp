@@ -21,7 +21,7 @@ struct node {
 
 struct node DBcon_R(char *user);
 
-int endPage(char *val,int a,int b) {
+int endPage(char *val,int a,int b,char *c) {
 //int end(int argc, char *argv[]) {
 strncpy(Name,val,strlen(val));    
 cout << Name << endl;
@@ -118,13 +118,13 @@ name = gtk_label_new("Name : ");
 //user name
 
 db_name = gtk_label_new(Name);
- gtk_fixed_put(GTK_FIXED(fixed), db_name, 80, 210);
+ gtk_fixed_put(GTK_FIXED(fixed), db_name, 70, 210);
 
 gamelevel= gtk_label_new("Game Level : ");
 gtk_fixed_put(GTK_FIXED(fixed), gamelevel, 15, 240);
 //user game level
-db_gamelvl = gtk_label_new(" ");
- gtk_fixed_put(GTK_FIXED(fixed), db_gamelvl, 30, 240);
+db_gamelvl = gtk_label_new(c);
+ gtk_fixed_put(GTK_FIXED(fixed), db_gamelvl, 110, 240);
 
 
 //GtkWidget *label3;
@@ -138,7 +138,7 @@ gtk_fixed_put(GTK_FIXED(fixed), resultlevel, 15, 300);
 db_resultlvl = gtk_label_new(C);
  gtk_fixed_put(GTK_FIXED(fixed), db_resultlvl, 110, 300);
  
- Info = gtk_label_new("** Level 1 : Top Class / Level 2 : Middle Class / Level 3 : NoAnswer **");
+ Info = gtk_label_new("** Level 1 : Top Class  /  Level 2 : Middle Class  /  Level 3 : NoAnswer **");
 gtk_fixed_put(GTK_FIXED(fixed), Info, 30, 330);
 
 //GtkWidget *correct_num;
